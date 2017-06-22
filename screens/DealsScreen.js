@@ -3,14 +3,6 @@ import { ActivityIndicator, FlatList, StyleSheet, Text, View, Image } from 'reac
 
 let Api = require('../api/DealsApi');
 
-let ddata = [
-  {title: "Los Angeles to San Francisco", date: "2017-06-17 17:30:14", key:1}
-, {title: "Charlotte to Los Angeles", date: "2017-06-17 16:41:39", key:2}
-, {title: "Dallas to Washington", date: "2017-06-17 16:21:32", key:3}
-, {title: "Philadelphia to New Orleans", date: "2017-06-17 15:59:29", key:4}
-, {title: "Fort Lauderdale to Aguadilla", date: "2017-06-17 15:40:55", key:5}
-];
-
 export default class DealsScreen extends Component {
   constructor(props) {
     super(props);
@@ -49,9 +41,9 @@ export default class DealsScreen extends Component {
 
     const renderTags = (ts) => {
       return (
-        ts.map( t => {
+        ts.map( (t,i) => {
           return (
-            <Text style={styles.dealTag}>{"#" + t}</Text>
+            <Text key={i} style={styles.dealTag}>{"#" + t}</Text>
           )
         })
       )
