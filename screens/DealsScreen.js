@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { ActivityIndicator, FlatList, StyleSheet, Text, View, Image } from 'react-native';
+import { TabNavigator } from 'react-navigation';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 let Api = require('../api/DealsApi');
 
@@ -12,7 +14,18 @@ export default class DealsScreen extends Component {
     }
   }
 
-  _keyExtractor = (item, ix) => item.id;
+  static navigationOptions = {
+  tabBarLabel: 'Deals',
+  tabBarIcon: ({ tintColor, focused }) => (
+    <Ionicons
+      name={focused ? 'ios-list-box' : 'ios-list-box-outline'}
+      size={26}
+      style={{ color: tintColor }}
+    />
+  ),
+};
+
+// _keyExtractor = (item, ix) => item.id;
 
   onAfterDealsLoad = (deals) => {
     deals.map( v => {console.log(v.id); return v} );
@@ -61,7 +74,7 @@ export default class DealsScreen extends Component {
       <View style={styles.container}>
         <FlatList
           data= {this.state.deals}
-          keyExtractor= {this._keyExtractor}
+          keyExtractor= {(item, ix) => item.id}
           renderItem= { ({item}) =>
 
             <View style={styles.dealContainer}>

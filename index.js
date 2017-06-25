@@ -1,4 +1,4 @@
 import Expo from 'expo';
-import App from './App';
+import AirfareSpotApp from './App';
 
-Expo.registerRootComponent(App);
+Expo.registerRootComponent(AirfareSpotApp);
