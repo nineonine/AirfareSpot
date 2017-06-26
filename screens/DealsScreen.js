@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { ActivityIndicator, FlatList, StyleSheet, Text, View, Image } from 'react-native';
+import { ActivityIndicator, FlatList, StyleSheet
+       , Text, View, Image, Linking, TouchableHighlight, Button } from 'react-native';
 import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
@@ -13,19 +14,6 @@ export default class DealsScreen extends Component {
       , dealsLoaded: false
     }
   }
-
-  static navigationOptions = {
-  tabBarLabel: 'Deals',
-  tabBarIcon: ({ tintColor, focused }) => (
-    <Ionicons
-      name={focused ? 'ios-list-box' : 'ios-list-box-outline'}
-      size={26}
-      style={{ color: tintColor }}
-    />
-  ),
-};
-
-// _keyExtractor = (item, ix) => item.id;
 
   onAfterDealsLoad = (deals) => {
     deals.map( v => {console.log(v.id); return v} );
@@ -47,6 +35,8 @@ export default class DealsScreen extends Component {
 
 
   render() {
+
+    const { navigate } = this.props.navigation;
 
     const getAllTags = (a) => {
       return a.categories.map(c => c.title)
@@ -79,25 +69,28 @@ export default class DealsScreen extends Component {
 
             <View style={styles.dealContainer}>
 
-                <View style={styles.dealContHeader}>
-                    <Text style={styles.pubTime}>{item.date}</Text>
-                </View>
+              <View style={styles.dealContHeader}>
+                <Text style={styles.pubTime}>{item.date}</Text>
+              </View>
 
+              <TouchableHighlight onPress={() => navigate('Browser', { url: item.url, title: item.title })} underlayColor='white'>
                 <View style={styles.dealContBody}>
 
-                    <View style={styles.dealTextBlock}>
-                      <Text style={styles.dealTitle}>
-                        {item.title}
-                      </Text>
-                      <View style={styles.dealTags}>
-                          {renderTags(getAllTags(item))}
-                      </View>
-                    </View>
+                  <View style={styles.dealTextBlock}>
+                    <Text style={styles.dealTitle}>
+                      {item.title}
+                    </Text>
 
-                    <Image
-                      source={{uri: item.thumbnail}}
-                      style={styles.dealImage}/>
+                    <View style={styles.dealTags}>
+                      {renderTags(getAllTags(item))}
+                    </View>
+                  </View>
+
+                  <Image
+                    source={{uri: item.thumbnail}}
+                    style={styles.dealImage}/>
                 </View>
+              </TouchableHighlight>
 
             </View>
           }
@@ -110,7 +103,7 @@ export default class DealsScreen extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 22
+    // paddingTop: 2
   },
   dealTextBlock: {
     flex: 3,

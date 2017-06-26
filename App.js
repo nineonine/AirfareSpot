@@ -1,19 +1,52 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { TabNavigator } from 'react-navigation';
+import { TabNavigator, StackNavigator } from 'react-navigation';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import DealsScreen from './screens/DealsScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import InternalBrowser from './screens/InternalBrowser';
 
-export default AirfareSpotApp = TabNavigator(
+
+const DealsTab = StackNavigator(
   {
     Deals: {
       screen: DealsScreen,
-      path: '',
+      path: '/',
+      navigationOptions: () => ({
+        title: 'Latest Deals',
+      }),
+    },
+    Browser: {
+      screen : InternalBrowser,
+      path: '/deal',
+      navigationOptions: () => ({
+        title: 'Deal',
+      }),
+    },
+  }
+);
+
+
+export default AirfareSpotApp = TabNavigator(
+  {
+    DealsTab: {
+      screen: DealsTab,
+      path: '/',
+      navigationOptions: {
+        tabBarLabel: 'Deals',
+        tabBarIcon: ({ tintColor, focused }) => (
+          <Ionicons
+            name={focused ? 'ios-list-box' : 'ios-list-box-outline'}
+            size={26}
+            style={{ color: tintColor }}
+          />
+        ),
+      },
     },
     Profile: {
       screen: ProfileScreen,
-      path: 'profile'
+      path: '/profile',
     },
   },
   {
