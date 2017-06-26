@@ -20,8 +20,8 @@ const DealsTab = StackNavigator(
     Browser: {
       screen : InternalBrowser,
       path: '/deal',
-      navigationOptions: () => ({
-        title: 'Deal',
+      navigationOptions: ({navigation}) => ({
+        title: navigation.state.params.title
       }),
     },
   }
