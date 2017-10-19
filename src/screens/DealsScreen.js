@@ -4,7 +4,7 @@ import { ActivityIndicator, FlatList, StyleSheet
 import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-let Api = require('../api/DealsApi');
+let Api = require('../../api/DealsApi');
 
 export default class DealsScreen extends Component {
   constructor(props) {

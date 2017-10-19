@@ -28,7 +28,7 @@ export default class ProfileScreen extends Component {
 
             <Container style={styles.imageLogoContainer}>
                 <FitImage
-                  source={require('../assets/images/AFS_LOGO05.png')}
+                  source={require('../../assets/images/AFS_LOGO05.png')}
                   style={styles.logoImage}
                   resizeMode="contain"
                 />
