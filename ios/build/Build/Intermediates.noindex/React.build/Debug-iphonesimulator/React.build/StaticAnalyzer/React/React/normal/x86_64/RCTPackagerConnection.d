@@ -1,0 +1,29 @@
+dependencies: \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/DevSupport/RCTPackagerConnection.m \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/../Libraries/WebSocket/RCTReconnectingWebSocket.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/../Libraries/WebSocket/RCTSRWebSocket.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/Base/RCTWebSocketObserverProtocol.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/DevSupport/RCTPackagerConnectionBridgeConfig.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/DevSupport/RCTPackagerConnectionConfig.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/DevSupport/RCTReloadPackagerMethod.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/React/DevSupport/RCTSamplingProfilerPackagerMethod.h

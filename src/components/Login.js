@@ -125,8 +125,7 @@ class LogIn extends React.Component {
         }, this));
       });
     } catch (exception) {
-      console.log("here?")
-      
+
       console.log(exception);
       errorMessage = exception.invalidCredentialsMessage || exception.message || exception;
     }

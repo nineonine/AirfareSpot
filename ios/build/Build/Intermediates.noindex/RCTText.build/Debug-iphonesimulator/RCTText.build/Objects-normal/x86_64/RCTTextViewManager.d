@@ -1,0 +1,35 @@
+dependencies: \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/Libraries/Text/RCTTextViewManager.m \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/Libraries/Text/RCTTextViewManager.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFont.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView+Layout.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTShadowView.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/Libraries/Text/RCTConvert+Text.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/Libraries/Text/RCTShadowTextView.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/Libraries/Text/RCTTextView.h \
+  /Users/nineonine/Programming/React/AirFareSpot/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTView.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/Libraries/Text/RCTTextInput.h \
+  /Users/nineonine/Programming/React/AirFareSpot/node_modules/react-native/Libraries/Text/RCTBackedTextInputViewProtocol.h

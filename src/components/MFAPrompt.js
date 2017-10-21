@@ -35,7 +35,7 @@ export default class MFAPrompt extends React.Component {
   }
 
   state = {
-    promptTitle: 'Enter code',
+    promptTitle: 'Enter code from confirmation email',
     code: '',
   }
 
