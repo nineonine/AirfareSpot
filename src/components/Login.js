@@ -216,7 +216,7 @@ class LogIn extends React.Component {
         </View>
         <View style={styles.formContainer}>
           <FormValidationMessage labelStyle={styles.validationText}>{this.state.errorMessage}</FormValidationMessage>
-          <FormLabel>Username</FormLabel>
+          <FormLabel>Email</FormLabel>
           <FormInput
             inputStyle={styles.input}
             selectionColor={colors.primary}
@@ -224,7 +224,7 @@ class LogIn extends React.Component {
             autoCorrect={false}
             underlineColorAndroid="transparent"
             editable={true}
-            placeholder="Please enter your username"
+            placeholder="Please enter your email"
             returnKeyType="next"
             ref="username"
             textInputRef="usernameInput"

@@ -31,6 +31,9 @@ import MFAPrompt from './MFAPrompt'
 import Auth from '../../lib/Categories/Auth';
 import Constants from '../utils/constants';
 import { colors } from 'theme';
+import FAIcon from 'react-native-vector-icons/FontAwesome';
+import SocialButton from './SocialButton';
+
 
 const styles = StyleSheet.create({
   bla: {
@@ -42,7 +45,36 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around',
     height: 420,
   },
-});
+  transparentButtonFB: {
+    borderColor: '#3B5699',
+    borderWidth: 2
+  },
+  buttonFBText: {
+    fontSize: 17,
+    color: '#3B5698'
+  },
+  transparentButtonTW: {
+    marginTop: 15,
+    borderColor: '#1DA1F2',
+    borderWidth: 2
+  },
+  buttonTWText: {
+    fontSize: 17,
+    color: '#1DA1F2'
+  },
+  buttonBigText: {
+    fontSize: 20,
+    fontWeight: 'bold'
+  },
+  inline: {
+    flexDirection: 'row'
+  },
+  buttonContainer: {
+    paddingLeft: 19,
+    paddingRight: 19
+  },
+})
+
 
 class SignUp extends React.Component {
   static navigationOptions = {
@@ -144,6 +176,32 @@ class SignUp extends React.Component {
     return (
       <View style={styles.bla}>
         <View style={styles.formContainer}>
+
+        <View style={styles.buttonContainer}>
+            <SocialButton
+                styles={{button: styles.transparentButtonFB}}
+                // onPress={this.press.bind(this)}
+                >
+                <View style={styles.inline}>
+                    <FAIcon name="facebook-official" size={25} color="#3B5698" />
+                    <Text style={[styles.buttonBigText, styles.buttonFBText]}>  Connect </Text>
+                    <Text style={styles.buttonFBText}>with Facebook</Text>
+                </View>
+            </SocialButton>
+        </View>
+        <View style={styles.buttonContainer}>
+            <SocialButton
+                styles={{button: styles.transparentButtonTW}}
+                // onPress={this.press.bind(this)}
+                >
+                <View style={styles.inline}>
+                    <FAIcon name="twitter" size={25} color="#1DA1F2" />
+                    <Text style={[styles.buttonBigText, styles.buttonTWText]}>  Connect </Text>
+                    <Text style={styles.buttonTWText}>with Twitter</Text>
+                </View>
+            </SocialButton>
+        </View>
+
           <View>
             <FormValidationMessage>{this.state.errorMessage}</FormValidationMessage>
             <FormLabel>Email</FormLabel>
