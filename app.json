@@ -1,7 +1,15 @@
 {
   "expo": {
-    "sdkVersion": "20.0.0"
-  },
-  "name": "AirfareSpot",
-  "displayName": "airfarespot"
+   "name": "AirfareSpot",
+   "displayName": "airfarespot",
+   "icon": "./assets/images/icon.png",
+   "version": "0.1.1",
+   "sdkVersion": "20.0.0",
+   "ios": {
+     "bundleIdentifier": "xyz.nineonine.airfarespot"
+   },
+   "android": {
+     "package": "xyz.nineonoine.airfarespot"
+   }
+  }
 }
