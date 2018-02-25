@@ -7,7 +7,6 @@ import {
 let Api = {
 
   fetchRecentDeals() {
-    console.log(API_RECENT_DEALS_URL)
     return fetch(API_RECENT_DEALS_URL)
       .then( (res) => res.json() )
       .then( (json) => json.posts )

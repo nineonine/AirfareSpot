@@ -1,15 +1,3 @@
-/*
- * Copyright 2017-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with
- * the License. A copy of the License is located at
- *
- *     http://aws.amazon.com/apache2.0/
- *
- * or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
- * CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions
- * and limitations under the License.
- */
 import React from 'react';
 import {
   View,
@@ -32,6 +20,12 @@ import MFAPrompt from './MFAPrompt';
 import ForgotPassword from './ForgotPassword';
 import { colors } from 'theme';
 import Constants from '../utils/constants';
+
+const FBSDK = require('react-native-fbsdk');
+const {
+  LoginButton,
+  AccessToken
+} = FBSDK;
 
 const { width } = Dimensions.get('window');
 
@@ -91,7 +85,31 @@ class LogIn extends React.Component {
     this.handleMFACancel = this.handleMFACancel.bind(this);
     this.handleMFASuccess = this.handleMFASuccess.bind(this);
     this.doLogin = this.doLogin.bind(this);
+    this.doFbLogin = this.doFbLogin.bind(this);
     this.onLogIn = this.onLogIn.bind(this);
+  }
+
+  async doFbLogin(token) {
+    const { auth } = this.props;
+
+    await auth.authenticateViaFB(token);
+    console.log("AFTER authenticate?");
+    const email = await auth.fetchEmailFromFB();
+    // let email = "mail"
+    console.log("AFTER fetch email?");
+    const exists = await auth.userExists(email);
+    if (exists) {
+      console.log("user already exists")
+    } else {
+      console.log("user does not exist")
+    }
+
+    // try {
+    //
+    // } catch (e) {
+    //   console.log("ERROR ON doFbLogin:")
+    //   console.log(e)
+    // }
   }
 
   async doLogin() {
@@ -214,6 +232,27 @@ class LogIn extends React.Component {
             style={styles.puppy}
           />
         </View>
+
+        <LoginButton
+          readPermissions={['public_profile', 'email']}
+          onLoginFinished={
+            (error, result) => {
+              if (error) {
+                console.log("Login failed with error: " + result.error);
+              } else if (result.isCancelled) {
+                console.log("Login was cancelled");
+              } else {
+                AccessToken.getCurrentAccessToken().then(
+                  (data) => {
+                    let tkn = data.accessToken.toString();
+                    this.doFbLogin(tkn);
+                  }
+                );
+              }
+            }
+          }
+          onLogoutFinished={() => console.log("User logged out")}/>
+
         <View style={styles.formContainer}>
           <FormValidationMessage labelStyle={styles.validationText}>{this.state.errorMessage}</FormValidationMessage>
           <FormLabel>Email</FormLabel>

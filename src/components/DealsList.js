@@ -10,6 +10,7 @@ export default class DealsList extends Component {
     }
 
     viewWebPost = (nav, item) => {
+      console.log(nav)
       nav.navigate('Browser', { url: item.url, title: item.title })
     }
 
